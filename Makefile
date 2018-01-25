@@ -712,6 +712,11 @@ ifdef CONFIG_KCOV
   endif
 endif
 
+ifeq ($(cc-name),clang)
+ifdef CONFIG_LOCAL_INIT
+KBUILD_CFLAGS   += -fsanitize=local-init
+endif
+
 ifdef CONFIG_FRAME_POINTER
 KBUILD_CFLAGS	+= -fno-omit-frame-pointer -fno-optimize-sibling-calls
 else
