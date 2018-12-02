@@ -3,6 +3,7 @@
  * Android IPC Subsystem
  *
  * Copyright (C) 2017 Google, Inc.
+ * Copyright (C) 2018 XiaoMi, Inc.
  *
  * This software is licensed under the terms of the GNU General Public
  * License version 2, as published by the Free Software Foundation, and
@@ -97,7 +98,6 @@ static void pr_err_size_seq(size_t *sizes, int *seq)
 		pr_cont("[%d]", seq[i]);
 	pr_cont("\n");
 }
-
 static bool check_buffer_pages_allocated(struct binder_alloc *alloc,
 					 struct binder_buffer *buffer,
 					 size_t size)
@@ -304,7 +304,6 @@ void binder_selftest_alloc(struct binder_alloc *alloc)
 		pr_info("%d tests FAILED\n", binder_selftest_failures);
 	else
 		pr_info("PASSED\n");
-
 done:
 	mutex_unlock(&binder_selftest_lock);
 }
