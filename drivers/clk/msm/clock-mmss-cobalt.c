@@ -325,8 +325,8 @@ static struct rcg_clk mdp_clk_src = {
 static struct clk_freq_tbl ftbl_maxi_clk_src[] = {
 	F_MM(  19200000,        mmsscc_xo,    1,    0,     0),
 	F_MM(  75000000, mmsscc_gpll0_div,    4,    0,     0),
-	F_MM( 171428571,     mmsscc_gpll0,  3.5,    0,     0),
-	F_MM( 323200000,   mmpll0_pll_out,  2.5,    0,     0),
+	F_MM( 171428571,     mmsscc_gpll0,    3.5,    0,     0),
+	F_MM( 323200000,   mmpll0_pll_out,    2.5,    0,     0),
 	F_MM( 406000000,   mmpll1_pll_out,    2,    0,     0),
 	F_END
 };
@@ -394,12 +394,12 @@ static struct rcg_clk jpeg0_clk_src = {
 static struct clk_freq_tbl ftbl_rot_clk_src[] = {
 	F_MM(  85714286,   mmsscc_gpll0,    7,    0,     0),
 	F_MM( 100000000,   mmsscc_gpll0,    6,    0,     0),
-	F_MM( 171428571,   mmsscc_gpll0,  3.5,    0,     0),
+	F_MM( 171428571,   mmsscc_gpll0,    3.5,    0,     0),
 	F_MM( 150000000,   mmsscc_gpll0,    4,    0,     0),
 	F_MM( 200000000,   mmsscc_gpll0,    3,    0,     0),
 	F_MM( 275000000, mmpll5_pll_out,    3,    0,     0),
 	F_MM( 300000000,   mmsscc_gpll0,    2,    0,     0),
-	F_MM( 330000000, mmpll5_pll_out,  2.5,    0,     0),
+	F_MM( 330000000, mmpll5_pll_out,    2.5,    0,     0),
 	F_MM( 412500000, mmpll5_pll_out,    2,    0,     0),
 	F_END
 };
@@ -443,7 +443,7 @@ static struct rcg_clk video_core_clk_src = {
 };
 
 static struct clk_freq_tbl ftbl_csiphy_clk_src[] = {
-	F_MM(  164570000,  mmpll10_pll_out, 3.5,    0,     0),
+	F_MM(  164570000,  mmpll10_pll_out,   3.5,    0,     0),
 	F_MM(  256000000,   mmpll4_pll_out,   3,    0,     0),
 	F_MM(  384000000,   mmpll4_pll_out,   2,    0,     0),
 	F_END

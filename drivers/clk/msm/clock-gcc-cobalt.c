@@ -262,6 +262,7 @@ static struct clk_freq_tbl ftbl_ufs_axi_clk_src[] = {
 	F( 100000000, gpll0_out_main,    6,    0,     0),
 	F( 200000000, gpll0_out_main,    3,    0,     0),
 	F( 240000000, gpll0_out_main,  2.5,    0,     0),
+
 	F_END
 };
 
